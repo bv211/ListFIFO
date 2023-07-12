@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include "List.h"
 
+using namespace std;
+
 int main() {
 
 	List list;
@@ -10,10 +12,12 @@ int main() {
 	list.push_back(4);
 	list.push_back(5);
 
+	cout << "PRINT" << endl;
 	list.print();
 
+	cout << "\nPOP" << endl;
 	while (!list.empty()) {
-		std::cout << list.pop() << std::endl;
+		cout << list.pop() << endl;
 	}
 
 	return 0;
